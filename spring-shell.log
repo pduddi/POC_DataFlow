@@ -1,0 +1,142 @@
+// dataflow 1.2.0.RELEASE log opened at 2018-02-01 14:21:35
+help
+dataflow config server
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-02-01 14:23:09
+// dataflow 1.2.0.RELEASE log opened at 2018-02-01 14:23:56
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-02-01 14:24:02
+// dataflow 1.2.0.RELEASE log opened at 2018-03-07 13:55:02
+help
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-03-07 14:41:07
+// dataflow 1.2.0.RELEASE log opened at 2018-03-07 14:41:15
+app register --name time-source --type source --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+// [failed] app register --name time-source --type source --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type source --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type source --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-03-07 14:47:30
+// dataflow 1.2.0.RELEASE log opened at 2018-03-07 14:52:05
+app register --name time-source --type source --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri /Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+// [failed] stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+// [failed] stream deploy --name time-to-log
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// [failed] stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+// [failed] stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// dataflow 1.2.0.RELEASE log opened at 2018-03-08 09:35:18
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// [failed] app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+help
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-03-08 10:45:26
+// dataflow 1.2.0.RELEASE log opened at 2018-03-08 11:09:34
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+// [failed] app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
+app register --name time-processor --type processor --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+app register --name time-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/ProcessorDemo/FileProcessor/target/FileProcessor-0.0.1-SNAPSHOT.jar
+stream create --name time-to-log --definition 'time-source | time-processor | time-sink'
+stream deploy --name time-to-log
