@@ -1,6 +1,4 @@
-# POC_DataFlow
-
-SPRING DATA FLOW POC with Logback Configuration
+# SPRING DATA FLOW POC with Logback Configuration - Procedure to start and run application
 
 1. Clone the repository
 
@@ -12,10 +10,10 @@ SPRING DATA FLOW POC with Logback Configuration
     mvn clean install
 
 5. Start the Dataflow Server
-java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar
+    java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar
 
 6. Start the dataflow shell
-java -jar spring-cloud-dataflow-shell-1.1.0.RELEASE.jar
+    java -jar spring-cloud-dataflow-shell-1.1.0.RELEASE.jar
 
 data flow shell should open
 
@@ -35,5 +33,17 @@ stream create --name time-to-log --definition 'time-source | time-processor | ti
 stream deploy --name time-to-log
 
 9. Verify that all these components are deployed in the Data flow server dashboard
+
+http://localhost:9393/dashboard/index.html#/apps/apps
+
+10. Lookup the location of logs by clickin on Runtime tab and then by clicking on processor application. You should see a location at the bottom like below
+
+working.dir
+
+/var/folders/zc/bknrmrnx57s17ccr5d4nwnsjxjf_q2/T/spring-cloud-dataflow-4406891338833267588/time-to-log-1520521163838/time-to-log.time-processor
+
+You will find the logs with name datastream.log
+
+
 
 
