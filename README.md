@@ -10,16 +10,21 @@
     mvn clean install
 
 5. Start the Dataflow Server
+    
     java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar
-
-6. Once the server is started, start the dataflow shell in second window
+    
+6. Check if the server is up and running
+    http://localhost:9393/dashboard/index.html
+    
+7. Once the server is started, start the dataflow shell in second window
+    
     java -jar spring-cloud-dataflow-shell-1.1.0.RELEASE.jar
 
 data flow shell should open
 
 dataflow> 
 
-7. In dataflow shell run the below commands, you need to change the path to match local environment.
+8. In dataflow shell run the below commands, you need to change the path to match local environment.
 
 dataflow> 
 app register --name file-source --type source --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/FileSource/Filesource/target/FileSource-0.0.1-SNAPSHOT.jar
@@ -30,7 +35,7 @@ app register --name file-processor --type processor --uri file:///Users/pduddi/I
 dataflow> 
 app register --name file-sink --type sink --uri file:///Users/pduddi/IdeaProjects/JEEVIProjects/POC_DataFlow/SincDemo/FileSinkModule/target/FileSinkModule-0.0.1-SNAPSHOT.jar 
 
-8. Now create a stream and deploy
+9. Now create a stream and deploy
 
 dataflow> 
 stream create --name file-to-log --definition 'file-source | file-processor | file-sink'
@@ -38,17 +43,19 @@ stream create --name file-to-log --definition 'file-source | file-processor | fi
 dataflow> 
 stream deploy --name file-to-log
 
-9. Go to Data flow server dashboard, verify that all these components are deployed and stream is created and deployed
+10. Go to Data flow server dashboard, verify that all these components are deployed and stream is created and deployed
 
 http://localhost:9393/dashboard/index.html
 
-10. Lookup the location of logs by clicking on Runtime tab and then by clicking on processor application. You should see a location at the bottom like below
+11. Lookup the location of logs by clicking on Runtime tab and then by clicking on processor application. You should see a location at the bottom like below
 
 working.dir
 
 /var/folders/zc/bknrmrnx57s17ccr5d4nwnsjxjf_q2/T/spring-cloud-dataflow-4406891338833267588/time-to-log-1520521163838/time-to-log.time-processor
 
 You will find the logs with name datastream.log which will rollover once it reaches 10MB size
+
+
 
 
 
